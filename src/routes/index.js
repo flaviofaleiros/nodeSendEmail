@@ -4,7 +4,7 @@ const config = require("./config");
 
 const transporter = mailer.createTransport(config);
 
-routes.post("/send-mail", (req, res) => {
+routes.post("/send-email", (req, res) => {
     const message = {
         from: req.body.from,
         to: req.body.to,
